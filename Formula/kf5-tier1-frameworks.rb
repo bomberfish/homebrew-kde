@@ -12,7 +12,7 @@ class Kf5Tier1Frameworks < Formula
     skip "Meta package"
   end
 
-  depends_on "extra-cmake-modules"
+  depends_on "kde-mac/kde/kf5-cmake-modules"
   depends_on "karchive"
   depends_on "kde-mac/kde/kf5-attica"
   depends_on "kde-mac/kde/kf5-breeze-icons"

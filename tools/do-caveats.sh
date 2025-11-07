@@ -10,7 +10,6 @@ fi
 brew services restart dbus
 
 MIGRATED=(
-	extra-cmake-modules
 	karchive
 	kdoctools
 	ki18n

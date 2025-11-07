@@ -10,7 +10,7 @@ class Kf5Kwallet < Formula
   depends_on "boost" => :build
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "extra-cmake-modules" => [:build, :test]
+  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "gettext" => :build
   depends_on "graphviz" => :build
   depends_on "kdoctools" => :build

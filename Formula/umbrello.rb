@@ -9,7 +9,7 @@ class Umbrello < Formula
 
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "extra-cmake-modules" => [:build, :test]
+  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kde-mac/kde/kdevelop-pg-qt" => :build
   depends_on "kde-mac/kde/kf5-kdesignerplugin" => :build
   depends_on "kde-mac/kde/kf5-kinit" => :build

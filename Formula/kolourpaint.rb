@@ -8,7 +8,7 @@ class Kolourpaint < Formula
   head "https://invent.kde.org/graphics/kolourpaint.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "extra-cmake-modules" => [:build, :test]
+  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kde-mac/kde/kf5-kdesignerplugin" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
