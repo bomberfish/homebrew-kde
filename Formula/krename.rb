@@ -18,7 +18,7 @@ class Krename < Formula
   depends_on "bomberfish/kde/kf5-kio"
   depends_on "bomberfish/kde/kf5-kjs"
   depends_on "podofo"
-  depends_on "taglib"
+  depends_on "bomberfish/kde/taglib-1""
 
   def install
     system "cmake", *kde_cmake_args

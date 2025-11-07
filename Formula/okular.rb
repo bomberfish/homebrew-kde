@@ -12,7 +12,7 @@ class Okular < Formula
   depends_on "ebook-tools" => :build
   depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "bomberfish/kde/kf5-khtml" => :build
-  depends_on "kdoctools" => :build
+  depends_on "bomberfish/kde/kf5-kdoctools" => :build
   depends_on "ninja" => :build
 
   depends_on "discount"
@@ -28,7 +28,7 @@ class Okular < Formula
   depends_on "bomberfish/kde/phonon"
   depends_on "libspectre"
   depends_on "poppler-qt5"
-  depends_on "qca"
+  depends_on "bomberfish/kde/kf5-qca"
   depends_on "threadweaver"
   depends_on "zlib"
 

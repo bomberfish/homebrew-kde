@@ -11,7 +11,7 @@ class Kdevelop < Formula
   depends_on "cvs" => :build
   depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "bomberfish/kde/kdevelop-pg-qt" => :build
-  depends_on "kdoctools" => :build
+  depends_on "bomberfish/kde/kf5-kdoctools" => :build
   depends_on "ninja" => :build
   depends_on "shared-mime-info" => :build
 

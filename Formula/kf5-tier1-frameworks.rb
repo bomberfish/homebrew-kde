@@ -33,7 +33,7 @@ class Kf5Tier1Frameworks < Formula
   depends_on "bomberfish/kde/kf5-solid"
   depends_on "bomberfish/kde/kf5-sonnet"
   depends_on "bomberfish/kde/kf5-syntax-highlighting"
-  depends_on "ki18n"
+  depends_on "bomberfish/kde/kf5-ki18n"
   depends_on "threadweaver"
 
   def install

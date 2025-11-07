@@ -14,7 +14,7 @@ class Okteta < Formula
 
   depends_on "cmake" => [:build, :test]
   depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
-  depends_on "kdoctools" => :build
+  depends_on "bomberfish/kde/kf5-kdoctools" => :build
   depends_on "ninja" => :build
   depends_on "shared-mime-info" => :build
 
@@ -23,7 +23,7 @@ class Okteta < Formula
   depends_on "bomberfish/kde/kf5-kcmutils"
   depends_on "bomberfish/kde/kf5-knewstuff"
   depends_on "bomberfish/kde/kf5-kparts"
-  depends_on "qca"
+  depends_on "bomberfish/kde/kf5-qca"
 
   def install
     system "cmake", *kde_cmake_args

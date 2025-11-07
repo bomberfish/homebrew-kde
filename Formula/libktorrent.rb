@@ -20,7 +20,7 @@ class Libktorrent < Formula
 
   depends_on "bomberfish/kde/kf5-kio"
   depends_on "libgcrypt"
-  depends_on "qca"
+  depends_on "bomberfish/kde/kf5-qca"
   depends_on "qt@5"
 
   def install

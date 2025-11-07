@@ -12,7 +12,7 @@ class Kf5Kconfigwidgets < Formula
   depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "gettext" => :build
   depends_on "graphviz" => :build
-  depends_on "kdoctools" => :build
+  depends_on "bomberfish/kde/kf5-kdoctools" => :build
   depends_on "ninja" => :build
 
   depends_on "bomberfish/kde/kf5-kauth"
@@ -20,7 +20,7 @@ class Kf5Kconfigwidgets < Formula
   depends_on "bomberfish/kde/kf5-kconfig"
   depends_on "bomberfish/kde/kf5-kguiaddons"
   depends_on "bomberfish/kde/kf5-kwidgetsaddons"
-  depends_on "ki18n"
+  depends_on "bomberfish/kde/kf5-ki18n"
 
   def install
     system "cmake", *kde_cmake_args

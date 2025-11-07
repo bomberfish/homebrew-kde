@@ -1,6 +1,6 @@
 # Simple mass-bamp with helper script
 For new releases of frameworks, gear or plasma there is a helper scripts `tools/update-formulas-common.pl`, e.g.
-- `$(brew --repo bomberfish/kde)/tools/update-formulas-common.pl --frameworks 5.110`
+- `$(brew --repo bomberfish/kde)/tools/update-formulas-common.pl --frameworks 5.116`
 - `$(brew --repo bomberfish/kde)/tools/update-formulas-common.pl --gear 23.08.2`
 - `$(brew --repo bomberfish/kde)/tools/update-formulas-common.pl --plasma 5.27.8`
 

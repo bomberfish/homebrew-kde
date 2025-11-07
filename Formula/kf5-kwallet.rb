@@ -13,7 +13,7 @@ class Kf5Kwallet < Formula
   depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "gettext" => :build
   depends_on "graphviz" => :build
-  depends_on "kdoctools" => :build
+  depends_on "bomberfish/kde/kf5-kdoctools" => :build
   depends_on "ninja" => :build
 
   depends_on "gpgme"
@@ -21,7 +21,7 @@ class Kf5Kwallet < Formula
   depends_on "bomberfish/kde/kf5-knotifications"
   depends_on "bomberfish/kde/kf5-kservice"
   depends_on "libgcrypt"
-  depends_on "qca"
+  depends_on "bomberfish/kde/kf5-qca"
 
   def install
     args = "-DCMAKE_CXX_FLAGS=-I#{Formula["libgpg-error"].include}"

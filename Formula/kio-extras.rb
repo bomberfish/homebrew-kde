@@ -10,7 +10,7 @@ class KioExtras < Formula
   depends_on "cmake" => [:build, :test]
   depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "gperf" => :build
-  depends_on "kdoctools" => :build
+  depends_on "bomberfish/kde/kf5-kdoctools" => :build
   depends_on "ninja" => :build
 
   depends_on "exiv2"
@@ -24,7 +24,7 @@ class KioExtras < Formula
 
   # Requires x86_64 macOS
   depends_on "openslp" if OS.mac? && Hardware::CPU.intel?
-  depends_on "taglib"
+  depends_on "bomberfish/kde/taglib-1""
 
   patch do
     # Fix https://bugs.kde.org/show_bug.cgi?id=402335

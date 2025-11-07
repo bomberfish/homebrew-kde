@@ -7,21 +7,25 @@ class Phonon < Formula
   sha256 "b4431ea2600df8137a717741ad9ebc7f7ec1649fa3e138541d8f42597144de2d"
   revision 1
   head "https://invent.kde.org/libraries/phonon.git", branch: "master"
-
+  
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
+  depends_on "extra-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
   depends_on "glib"
   depends_on "qt@5"
 
   conflicts_with "pulseaudio", because: "fatal error: 'pulse/glib-mainloop.h' file not found"
 
+  patch do 
+     url "https://gitweb.gentoo.org/repo/gentoo.git/plain/media-libs/phonon/files/phonon-4.11.1-clang-16.patch?id=c17f12094f895eab94115d8556bafe3df64d0c1b"
+  end
   def install
     args = %w[
       -DCMAKE_SKIP_RPATH=ON
       -DPHONON_BUILD_PHONON4QT5=ON
       -DPHONON_BUILD_DOC=ON
+      -Wno-enum-constexpr-conversion
     ]
 
     system "cmake", *args, *kde_cmake_args
@@ -35,3 +39,4 @@ class Phonon < Formula
     system "cmake", ".", "-Wno-dev"
   end
 end
+

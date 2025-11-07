@@ -19,9 +19,9 @@ class Kf5Kfilemetadata < Formula
   depends_on "karchive"
   depends_on "bomberfish/kde/kf5-kconfig"
   depends_on "bomberfish/kde/kf5-kcoreaddons"
-  depends_on "ki18n"
+  depends_on "bomberfish/kde/kf5-ki18n"
   depends_on "poppler-qt5"
-  depends_on "taglib"
+  depends_on "bomberfish/kde/taglib-1""
 
   def install
     system "cmake", *kde_cmake_args

@@ -14,13 +14,13 @@ class Kf5Kservice < Formula
   depends_on "flex" => :build
   depends_on "gettext" => :build
   depends_on "graphviz" => :build
-  depends_on "kdoctools" => :build
+  depends_on "bomberfish/kde/kf5-kdoctools" => :build
   depends_on "ninja" => :build
 
   depends_on "bomberfish/kde/kf5-kconfig"
   depends_on "bomberfish/kde/kf5-kcrash"
   depends_on "bomberfish/kde/kf5-kdbusaddons"
-  depends_on "ki18n"
+  depends_on "bomberfish/kde/kf5-ki18n"
 
   def install
     system "cmake", *kde_cmake_args

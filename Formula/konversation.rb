@@ -9,7 +9,7 @@ class Konversation < Formula
 
   depends_on "cmake" => [:build, :test]
   depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
-  depends_on "kdoctools" => :build
+  depends_on "bomberfish/kde/kf5-kdoctools" => :build
   depends_on "ninja" => :build
 
   depends_on "hicolor-icon-theme"
@@ -19,7 +19,7 @@ class Konversation < Formula
   depends_on "bomberfish/kde/kf5-kio"
   depends_on "bomberfish/kde/kf5-knotifyconfig"
   depends_on "bomberfish/kde/kf5-kparts"
-  depends_on "qca"
+  depends_on "bomberfish/kde/kf5-qca"
 
   def install
     system "cmake", *kde_cmake_args

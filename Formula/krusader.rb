@@ -19,7 +19,7 @@ class Krusader < Formula
   depends_on "bomberfish/kde/kf5-kwallet"
   depends_on "bomberfish/kde/kf5-kxmlgui"
   depends_on "bomberfish/kde/kio-extras"
-  depends_on "kdoctools"
+  depends_on "bomberfish/kde/kf5-kdoctools"
 
   def install
     system "cmake", *kde_cmake_args

@@ -22,9 +22,9 @@ class KdeconnectKde < Formula
   depends_on "bomberfish/kde/kf5-knotifications"
   depends_on "bomberfish/kde/kf5-kpeople"
   depends_on "bomberfish/kde/kf5-kservice"
-  depends_on "kdoctools"
-  depends_on "ki18n"
-  depends_on "qca"
+  depends_on "bomberfish/kde/kf5-kdoctools"
+  depends_on "bomberfish/kde/kf5-ki18n"
+  depends_on "bomberfish/kde/kf5-qca"
   depends_on "qt@5"
 
   def install
