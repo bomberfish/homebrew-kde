@@ -8,7 +8,7 @@ class Tellico < Formula
   head "https://invent.kde.org/office/tellico.git", branch: "master"
 
   depends_on "cmake" => [:build]
-  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build]
+  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build]
   depends_on "kdoctools" => [:build]
   depends_on "ninja" => [:build]
 

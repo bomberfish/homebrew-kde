@@ -19,7 +19,7 @@ CORE_FORMULAS=(
 	kdoctools
 	ki18n
 	karchive
-	bomberfish/kde/kf5-cmake-modules
+	bomberfish/kde/kf5-extra-cmake-modules
 )
 
 echo "Removing KDE formulas from homebrew/core if any installed"

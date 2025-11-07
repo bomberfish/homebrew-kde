@@ -8,7 +8,7 @@ class Kf5Kmediaplayer < Formula
   head "https://invent.kde.org/frameworks/kmediaplayer.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
 
   depends_on "bomberfish/kde/kf5-kparts"

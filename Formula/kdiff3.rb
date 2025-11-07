@@ -8,7 +8,7 @@ class Kdiff3 < Formula
   head "https://invent.kde.org/sdk/kdiff3.git", branch: "master"
 
   depends_on "cmake" => :build
-  depends_on "bomberfish/kde/kf5-cmake-modules" => :build
+  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => :build
   depends_on "bomberfish/kde/kf5-kcoreaddons" => :build
   depends_on "bomberfish/kde/kf5-kcrash" => :build
   depends_on "bomberfish/kde/kf5-kiconthemes" => :build

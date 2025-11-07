@@ -8,7 +8,7 @@ class Kmymoney < Formula
   head "https://invent.kde.org/office/kmymoney.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
   depends_on "shared-mime-info" => :build
 

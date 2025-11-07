@@ -8,7 +8,7 @@ class Krename < Formula
   head "https://invent.kde.org/utilities/krename.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
 

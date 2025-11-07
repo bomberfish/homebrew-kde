@@ -8,7 +8,7 @@ class KdeconnectKde < Formula
   head "https://invent.kde.org/network/kdeconnect-kde.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "bomberfish/kde/kf5-kdeclarative" => :build
   depends_on "ninja" => :build
   depends_on "gettext"

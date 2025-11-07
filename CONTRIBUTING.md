@@ -10,7 +10,7 @@ We use gpg keys for verifying downloaded tarballs, so you may need to import cor
 Please check official Homebrew [documentation](https://docs.brew.sh/Adding-Software-to-Homebrew). Mostly all rules apply to our tap. You may want to start from `brew create --cmake --tap bomberfish/kde --set-name <formula-name> <url-to-tarball>`. Where `<formula-name>` is some custom formula name, e.g. we are prefixing framework names with `kf5-`. Just to make sure that formula doens't pick some non-mentioned dependency automaticall, we recommend uninstalling all existing kde formulas by uninstall script, i.e. `"$(brew --repo bomberfish/kde)/tools/uninstall.sh"`. The most essential dependecies for all formulas in our tap is the following:
 ```ruby
   depends_on "cmake" => :build # should be already added by `brew create`
-  depends_on "bomberfish/kde/kf5-cmake-modules" => :build
+  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => :build
   depends_on "ninja" => :build
 
   depends_on "qt@5"

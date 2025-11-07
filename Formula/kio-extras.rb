@@ -8,7 +8,7 @@ class KioExtras < Formula
   head "https://invent.kde.org/network/kio-extras.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "gperf" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build

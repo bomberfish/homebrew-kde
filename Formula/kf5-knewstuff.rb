@@ -9,7 +9,7 @@ class Kf5Knewstuff < Formula
 
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-extra-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
 
   depends_on "bomberfish/kde/kf5-kio"
