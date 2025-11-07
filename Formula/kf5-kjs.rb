@@ -8,7 +8,7 @@ class Kf5Kjs < Formula
   head "https://invent.kde.org/frameworks/kjs.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
@@ -25,7 +25,7 @@ class Kf5Kjs < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

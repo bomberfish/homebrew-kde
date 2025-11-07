@@ -8,17 +8,17 @@ class KioExtras < Formula
   head "https://invent.kde.org/network/kio-extras.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "gperf" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
   depends_on "exiv2"
-  depends_on "kde-mac/kde/kf5-kdnssd"
-  depends_on "kde-mac/kde/kf5-kimageformats"
-  depends_on "kde-mac/kde/kf5-kio"
-  depends_on "kde-mac/kde/kf5-kpty"
-  depends_on "kde-mac/kde/kf5-syntax-highlighting"
+  depends_on "bomberfish/kde/kf5-kdnssd"
+  depends_on "bomberfish/kde/kf5-kimageformats"
+  depends_on "bomberfish/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-kpty"
+  depends_on "bomberfish/kde/kf5-syntax-highlighting"
   depends_on "libmtp"
   depends_on "openexr"
 
@@ -42,7 +42,7 @@ class KioExtras < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

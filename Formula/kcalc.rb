@@ -12,8 +12,8 @@ class Kcalc < Formula
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-breeze-icons"
-  depends_on "kde-mac/kde/kf5-kinit"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-kinit"
   depends_on "mpfr"
 
   def install
@@ -36,7 +36,7 @@ class Kcalc < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

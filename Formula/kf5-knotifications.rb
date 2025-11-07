@@ -9,15 +9,15 @@ class Kf5Knotifications < Formula
 
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "graphviz" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kcodecs"
-  depends_on "kde-mac/kde/kf5-kconfig"
-  depends_on "kde-mac/kde/kf5-kcoreaddons"
-  depends_on "kde-mac/kde/kf5-kwindowsystem"
-  depends_on "kde-mac/kde/phonon"
+  depends_on "bomberfish/kde/kf5-kcodecs"
+  depends_on "bomberfish/kde/kf5-kconfig"
+  depends_on "bomberfish/kde/kf5-kcoreaddons"
+  depends_on "bomberfish/kde/kf5-kwindowsystem"
+  depends_on "bomberfish/kde/phonon"
   depends_on "libcanberra"
 
   def install
@@ -38,7 +38,7 @@ class Kf5Knotifications < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

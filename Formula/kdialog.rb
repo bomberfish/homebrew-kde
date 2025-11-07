@@ -8,17 +8,17 @@ class Kdialog < Formula
   head "https://invent.kde.org/utilities/kdialog.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kcoreaddons"
-  depends_on "kde-mac/kde/kf5-kdbusaddons"
-  depends_on "kde-mac/kde/kf5-kguiaddons"
-  depends_on "kde-mac/kde/kf5-kiconthemes"
-  depends_on "kde-mac/kde/kf5-kio"
-  depends_on "kde-mac/kde/kf5-knotifications"
-  depends_on "kde-mac/kde/kf5-ktextwidgets"
-  depends_on "kde-mac/kde/kf5-kwindowsystem"
+  depends_on "bomberfish/kde/kf5-kcoreaddons"
+  depends_on "bomberfish/kde/kf5-kdbusaddons"
+  depends_on "bomberfish/kde/kf5-kguiaddons"
+  depends_on "bomberfish/kde/kf5-kiconthemes"
+  depends_on "bomberfish/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-knotifications"
+  depends_on "bomberfish/kde/kf5-ktextwidgets"
+  depends_on "bomberfish/kde/kf5-kwindowsystem"
 
   def install
     system "cmake", *kde_cmake_args
@@ -40,7 +40,7 @@ class Kdialog < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

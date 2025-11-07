@@ -1,16 +1,16 @@
 # Simple mass-bamp with helper script
 For new releases of frameworks, gear or plasma there is a helper scripts `tools/update-formulas-common.pl`, e.g.
-- `$(brew --repo kde-mac/kde)/tools/update-formulas-common.pl --frameworks 5.110`
-- `$(brew --repo kde-mac/kde)/tools/update-formulas-common.pl --gear 23.08.2`
-- `$(brew --repo kde-mac/kde)/tools/update-formulas-common.pl --plasma 5.27.8`
+- `$(brew --repo bomberfish/kde)/tools/update-formulas-common.pl --frameworks 5.110`
+- `$(brew --repo bomberfish/kde)/tools/update-formulas-common.pl --gear 23.08.2`
+- `$(brew --repo bomberfish/kde)/tools/update-formulas-common.pl --plasma 5.27.8`
 
-We use gpg keys for verifying downloaded tarballs, so you may need to import corresponding gpg key of releaser if you see missing key error. For other formulas, i.e. those with own release cycle you may use brew's livecheck, e.g. `brew livecheck --newer-only --tap kde-mac/kde`. Then commit your changes on a new branch. We strongy recommend verifyig your changes locally by installing / upgrading all our packages from our shipped `Brewfile`, i.e. `brew bundle --verbose --file "$(brew --repo kde-mac/kde)/Brewfile"`.
+We use gpg keys for verifying downloaded tarballs, so you may need to import corresponding gpg key of releaser if you see missing key error. For other formulas, i.e. those with own release cycle you may use brew's livecheck, e.g. `brew livecheck --newer-only --tap bomberfish/kde`. Then commit your changes on a new branch. We strongy recommend verifyig your changes locally by installing / upgrading all our packages from our shipped `Brewfile`, i.e. `brew bundle --verbose --file "$(brew --repo bomberfish/kde)/Brewfile"`.
 
 # Creating new formula
-Please check official Homebrew [documentation](https://docs.brew.sh/Adding-Software-to-Homebrew). Mostly all rules apply to our tap. You may want to start from `brew create --cmake --tap kde-mac/kde --set-name <formula-name> <url-to-tarball>`. Where `<formula-name>` is some custom formula name, e.g. we are prefixing framework names with `kf5-`. Just to make sure that formula doens't pick some non-mentioned dependency automaticall, we recommend uninstalling all existing kde formulas by uninstall script, i.e. `"$(brew --repo kde-mac/kde)/tools/uninstall.sh"`. The most essential dependecies for all formulas in our tap is the following:
+Please check official Homebrew [documentation](https://docs.brew.sh/Adding-Software-to-Homebrew). Mostly all rules apply to our tap. You may want to start from `brew create --cmake --tap bomberfish/kde --set-name <formula-name> <url-to-tarball>`. Where `<formula-name>` is some custom formula name, e.g. we are prefixing framework names with `kf5-`. Just to make sure that formula doens't pick some non-mentioned dependency automaticall, we recommend uninstalling all existing kde formulas by uninstall script, i.e. `"$(brew --repo bomberfish/kde)/tools/uninstall.sh"`. The most essential dependecies for all formulas in our tap is the following:
 ```ruby
   depends_on "cmake" => :build # should be already added by `brew create`
-  depends_on "kde-mac/kde/kf5-cmake-modules" => :build
+  depends_on "bomberfish/kde/kf5-cmake-modules" => :build
   depends_on "ninja" => :build
 
   depends_on "qt@5"
@@ -30,6 +30,6 @@ I recommend running install process by adding `-vd` options for brew, e.g. `brew
 
 In case of GUI app there may be also required to add some quircks, e.g. adding Qt plugin search path. Please review current GUI apps formulas for common quircks. In case of GUI apps it is also required to add a `caveat` block for making symlink for a binary for easy launch. Please also add this caveat at the end of `tools/do-caveats.sh` file. 
 
-Last step is to update `Brewfile` that we ship in the root of our repo, this process is automated, so you only need to run a script `"$(brew --repo kde-mac/kde)/tools/update-brewfile.sh`.
+Last step is to update `Brewfile` that we ship in the root of our repo, this process is automated, so you only need to run a script `"$(brew --repo bomberfish/kde)/tools/update-brewfile.sh`.
 
 Don't be affraid that your formula has build or runtime issues, if you reach dead end, feel free to file a drat MR, maybe someone will pick it up and finish. For some reason Invent notifications is broken for me, so please drop an email to yurii.kolesnykov@kdemail.net, so I can review your MR and/or help.

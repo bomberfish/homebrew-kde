@@ -13,16 +13,16 @@ class Okteta < Formula
   end
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
   depends_on "shared-mime-info" => :build
 
   depends_on "hicolor-icon-theme"
-  depends_on "kde-mac/kde/kf5-breeze-icons"
-  depends_on "kde-mac/kde/kf5-kcmutils"
-  depends_on "kde-mac/kde/kf5-knewstuff"
-  depends_on "kde-mac/kde/kf5-kparts"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-kcmutils"
+  depends_on "bomberfish/kde/kf5-knewstuff"
+  depends_on "bomberfish/kde/kf5-kparts"
   depends_on "qca"
 
   def install
@@ -45,7 +45,7 @@ class Okteta < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

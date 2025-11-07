@@ -12,19 +12,19 @@ class Kf5Tier2Frameworks < Formula
     skip "Meta package"
   end
 
-  depends_on "kde-mac/kde/kf5-kactivities"
-  depends_on "kde-mac/kde/kf5-kauth"
-  depends_on "kde-mac/kde/kf5-kcompletion"
-  depends_on "kde-mac/kde/kf5-kcrash"
-  depends_on "kde-mac/kde/kf5-kfilemetadata"
-  depends_on "kde-mac/kde/kf5-kimageformats"
-  depends_on "kde-mac/kde/kf5-kjobwidgets"
-  depends_on "kde-mac/kde/kf5-knotifications"
-  depends_on "kde-mac/kde/kf5-kpackage"
-  depends_on "kde-mac/kde/kf5-kpeople"
-  depends_on "kde-mac/kde/kf5-kpty"
-  depends_on "kde-mac/kde/kf5-kunitconversion"
-  depends_on "kde-mac/kde/kf5-tier1-frameworks"
+  depends_on "bomberfish/kde/kf5-kactivities"
+  depends_on "bomberfish/kde/kf5-kauth"
+  depends_on "bomberfish/kde/kf5-kcompletion"
+  depends_on "bomberfish/kde/kf5-kcrash"
+  depends_on "bomberfish/kde/kf5-kfilemetadata"
+  depends_on "bomberfish/kde/kf5-kimageformats"
+  depends_on "bomberfish/kde/kf5-kjobwidgets"
+  depends_on "bomberfish/kde/kf5-knotifications"
+  depends_on "bomberfish/kde/kf5-kpackage"
+  depends_on "bomberfish/kde/kf5-kpeople"
+  depends_on "bomberfish/kde/kf5-kpty"
+  depends_on "bomberfish/kde/kf5-kunitconversion"
+  depends_on "bomberfish/kde/kf5-tier1-frameworks"
   depends_on "kdoctools"
 
   def install
@@ -35,7 +35,7 @@ class Kf5Tier2Frameworks < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

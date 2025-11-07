@@ -7,11 +7,11 @@ mkdir -p /tmp/kde/
 
 brew ls --formula --full-name > "${INSTALLED_FORMULAS_LIST}"
 
-if grep -q '^kde-mac/kde' "${INSTALLED_FORMULAS_LIST}"; then
-	echo "Uninstalling formulas from kde-mac/kde tap"
-	brew uninstall -f `grep '^kde-mac/kde' "${INSTALLED_FORMULAS_LIST}"`
+if grep -q '^bomberfish/kde' "${INSTALLED_FORMULAS_LIST}"; then
+	echo "Uninstalling formulas from bomberfish/kde tap"
+	brew uninstall -f `grep '^bomberfish/kde' "${INSTALLED_FORMULAS_LIST}"`
 else
-	echo "No formulas from kde-mac/kde tap is installed"
+	echo "No formulas from bomberfish/kde tap is installed"
 fi
 
 CORE_FORMULAS=(
@@ -19,7 +19,7 @@ CORE_FORMULAS=(
 	kdoctools
 	ki18n
 	karchive
-	kde-mac/kde/kf5-cmake-modules
+	bomberfish/kde/kf5-cmake-modules
 )
 
 echo "Removing KDE formulas from homebrew/core if any installed"
@@ -30,13 +30,13 @@ for CORE_FORMULA in "${CORE_FORMULAS[@]}"; do
 	fi
 done
 
-brew ls --cask --full-name | grep '^kde-mac/kde' > "${KDE_CASKS_LIST}"
+brew ls --cask --full-name | grep '^bomberfish/kde' > "${KDE_CASKS_LIST}"
 
 if [[ -f "${KDE_CASKS_LIST}" ]]; then
-	echo "Uninstalling casks from kde-mac/kde tap"
+	echo "Uninstalling casks from bomberfish/kde tap"
 	xargs brew uninstall -f < "${KDE_CASKS_LIST}"
 else
-	echo "No casks from kde-mac/kde tap is installed"
+	echo "No casks from bomberfish/kde tap is installed"
 fi
 
 rm "${INSTALLED_FORMULAS_LIST}" "${KDE_CASKS_LIST}"

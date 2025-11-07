@@ -8,19 +8,19 @@ class Tellico < Formula
   head "https://invent.kde.org/office/tellico.git", branch: "master"
 
   depends_on "cmake" => [:build]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build]
   depends_on "kdoctools" => [:build]
   depends_on "ninja" => [:build]
 
   depends_on "exempi"
   depends_on "hicolor-icon-theme"
-  depends_on "kde-mac/kde/kf5-kfilemetadata"
-  depends_on "kde-mac/kde/kf5-khtml"
-  depends_on "kde-mac/kde/kf5-kio"
-  depends_on "kde-mac/kde/kf5-kitemmodels"
-  depends_on "kde-mac/kde/kf5-knewstuff"
-  depends_on "kde-mac/kde/kf5-kxmlgui"
-  depends_on "kde-mac/kde/kf5-solid"
+  depends_on "bomberfish/kde/kf5-kfilemetadata"
+  depends_on "bomberfish/kde/kf5-khtml"
+  depends_on "bomberfish/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-kitemmodels"
+  depends_on "bomberfish/kde/kf5-knewstuff"
+  depends_on "bomberfish/kde/kf5-kxmlgui"
+  depends_on "bomberfish/kde/kf5-solid"
   depends_on "libcdio"
   depends_on "poppler-qt5"
   depends_on "qt@5"

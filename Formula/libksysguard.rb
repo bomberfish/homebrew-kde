@@ -11,11 +11,11 @@ class Libksysguard < Formula
   disable! date: "2023-10-25", because: "depends on X11"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-kio"
 
   def install
     system "cmake", *kde_cmake_args

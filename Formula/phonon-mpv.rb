@@ -11,7 +11,7 @@ class PhononMpv < Formula
   depends_on "cmake" => [:build, :test]
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/phonon"
+  depends_on "bomberfish/kde/phonon"
   depends_on "mpv"
 
   def install

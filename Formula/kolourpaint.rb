@@ -8,13 +8,13 @@ class Kolourpaint < Formula
   head "https://invent.kde.org/graphics/kolourpaint.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-kdesignerplugin" => :build
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-kdesignerplugin" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-breeze-icons"
-  depends_on "kde-mac/kde/kf5-kdelibs4support"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-kdelibs4support"
 
   def install
     system "cmake", *kde_cmake_args
@@ -36,7 +36,7 @@ class Kolourpaint < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

@@ -9,25 +9,25 @@ class Kdevelop < Formula
 
   depends_on "boost" => :build
   depends_on "cvs" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
-  depends_on "kde-mac/kde/kdevelop-pg-qt" => :build
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kdevelop-pg-qt" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
   depends_on "shared-mime-info" => :build
 
   depends_on "cmake"
   depends_on "cppcheck"
-  depends_on "kde-mac/kde/grantlee-qt5"
-  depends_on "kde-mac/kde/kf5-breeze-icons"
-  depends_on "kde-mac/kde/kf5-kcmutils"
-  depends_on "kde-mac/kde/kf5-kitemmodels"
-  depends_on "kde-mac/kde/kf5-knewstuff"
-  depends_on "kde-mac/kde/kf5-knotifyconfig"
-  depends_on "kde-mac/kde/kf5-ktexteditor"
-  depends_on "kde-mac/kde/konsole"
-  depends_on "kde-mac/kde/ksysguard"
-  depends_on "kde-mac/kde/libkomparediff2"
-  depends_on "kde-mac/kde/qt-webkit"
+  depends_on "bomberfish/kde/grantlee-qt5"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-kcmutils"
+  depends_on "bomberfish/kde/kf5-kitemmodels"
+  depends_on "bomberfish/kde/kf5-knewstuff"
+  depends_on "bomberfish/kde/kf5-knotifyconfig"
+  depends_on "bomberfish/kde/kf5-ktexteditor"
+  depends_on "bomberfish/kde/konsole"
+  depends_on "bomberfish/kde/ksysguard"
+  depends_on "bomberfish/kde/libkomparediff2"
+  depends_on "bomberfish/kde/qt-webkit"
   depends_on "llvm"
   depends_on "subversion"
   depends_on "threadweaver"
@@ -35,7 +35,7 @@ class Kdevelop < Formula
   # Requires x86_64 macOS
   depends_on "gdb" => :recommended if OS.linux? || (OS.mac? && Hardware::CPU.intel?)
 
-  conflicts_with "kde-mac/kde/kdevplatform", because: "now included in Kdevelop"
+  conflicts_with "bomberfish/kde/kdevplatform", because: "now included in Kdevelop"
 
   patch :DATA
 
@@ -61,7 +61,7 @@ class Kdevelop < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

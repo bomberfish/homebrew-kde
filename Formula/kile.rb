@@ -9,16 +9,16 @@ class Kile < Formula
   head "https://invent.kde.org/office/kile.git", branch: "master"
 
   depends_on "cmake" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => :build
+  depends_on "bomberfish/kde/kf5-cmake-modules" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-khtml"
-  depends_on "kde-mac/kde/kf5-kinit"
-  depends_on "kde-mac/kde/kf5-ktexteditor"
-  depends_on "kde-mac/kde/okular"
+  depends_on "bomberfish/kde/kf5-khtml"
+  depends_on "bomberfish/kde/kf5-kinit"
+  depends_on "bomberfish/kde/kf5-ktexteditor"
+  depends_on "bomberfish/kde/okular"
 
-  depends_on "kde-mac/kde/konsole" => :recommended
+  depends_on "bomberfish/kde/konsole" => :recommended
   depends_on "poppler-qt5" => :recommended
 
   def install
@@ -37,7 +37,7 @@ class Kile < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-       "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+       "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

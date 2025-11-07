@@ -9,12 +9,12 @@ class Kf5Kcrash < Formula
 
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "graphviz" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kcoreaddons"
-  depends_on "kde-mac/kde/kf5-kwindowsystem"
+  depends_on "bomberfish/kde/kf5-kcoreaddons"
+  depends_on "bomberfish/kde/kf5-kwindowsystem"
 
   def install
     system "cmake", *kde_cmake_args

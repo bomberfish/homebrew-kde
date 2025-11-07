@@ -8,11 +8,11 @@ class Kf5Qqc2DesktopStyle < Formula
   head "https://invent.kde.org/frameworks/qqc2-desktop-style.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kiconthemes"
-  depends_on "kde-mac/kde/kf5-kirigami2"
+  depends_on "bomberfish/kde/kf5-kiconthemes"
+  depends_on "bomberfish/kde/kf5-kirigami2"
 
   def install
     system "cmake", *kde_cmake_args

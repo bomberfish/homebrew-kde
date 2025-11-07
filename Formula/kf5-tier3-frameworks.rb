@@ -12,25 +12,25 @@ class Kf5Tier3Frameworks < Formula
     skip "Meta package"
   end
 
-  depends_on "kde-mac/kde/kf5-kbookmarks"
-  depends_on "kde-mac/kde/kf5-kcmutils"
-  depends_on "kde-mac/kde/kf5-kconfigwidgets"
-  depends_on "kde-mac/kde/kf5-kdeclarative"
-  depends_on "kde-mac/kde/kf5-kded"
-  depends_on "kde-mac/kde/kf5-kemoticons"
-  depends_on "kde-mac/kde/kf5-kglobalaccel"
-  depends_on "kde-mac/kde/kf5-kiconthemes"
-  depends_on "kde-mac/kde/kf5-kinit"
-  depends_on "kde-mac/kde/kf5-kio"
-  depends_on "kde-mac/kde/kf5-knewstuff"
-  depends_on "kde-mac/kde/kf5-knotifyconfig"
-  depends_on "kde-mac/kde/kf5-kparts"
-  depends_on "kde-mac/kde/kf5-kservice"
-  depends_on "kde-mac/kde/kf5-ktexteditor"
-  depends_on "kde-mac/kde/kf5-ktextwidgets"
-  depends_on "kde-mac/kde/kf5-kwallet"
-  depends_on "kde-mac/kde/kf5-kxmlgui"
-  depends_on "kde-mac/kde/kf5-tier2-frameworks"
+  depends_on "bomberfish/kde/kf5-kbookmarks"
+  depends_on "bomberfish/kde/kf5-kcmutils"
+  depends_on "bomberfish/kde/kf5-kconfigwidgets"
+  depends_on "bomberfish/kde/kf5-kdeclarative"
+  depends_on "bomberfish/kde/kf5-kded"
+  depends_on "bomberfish/kde/kf5-kemoticons"
+  depends_on "bomberfish/kde/kf5-kglobalaccel"
+  depends_on "bomberfish/kde/kf5-kiconthemes"
+  depends_on "bomberfish/kde/kf5-kinit"
+  depends_on "bomberfish/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-knewstuff"
+  depends_on "bomberfish/kde/kf5-knotifyconfig"
+  depends_on "bomberfish/kde/kf5-kparts"
+  depends_on "bomberfish/kde/kf5-kservice"
+  depends_on "bomberfish/kde/kf5-ktexteditor"
+  depends_on "bomberfish/kde/kf5-ktextwidgets"
+  depends_on "bomberfish/kde/kf5-kwallet"
+  depends_on "bomberfish/kde/kf5-kxmlgui"
+  depends_on "bomberfish/kde/kf5-tier2-frameworks"
 
   def install
     touch "empty"
@@ -40,7 +40,7 @@ class Kf5Tier3Frameworks < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-      "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+      "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

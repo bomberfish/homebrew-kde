@@ -8,12 +8,12 @@ class Kf5Kjsembed < Formula
   head "https://invent.kde.org/frameworks/kjsembed.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "gettext" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kjs"
+  depends_on "bomberfish/kde/kf5-kjs"
   depends_on "ki18n"
 
   def install

@@ -12,16 +12,16 @@ class Kf5PortingaidsFrameworks < Formula
     skip "Meta package"
   end
 
-  depends_on "kde-mac/kde/kf5-kdelibs4support"
-  depends_on "kde-mac/kde/kf5-kdesignerplugin"
-  depends_on "kde-mac/kde/kf5-kdewebkit"
-  depends_on "kde-mac/kde/kf5-khtml"
-  depends_on "kde-mac/kde/kf5-kjs"
-  depends_on "kde-mac/kde/kf5-kjsembed"
-  depends_on "kde-mac/kde/kf5-kmediaplayer"
-  depends_on "kde-mac/kde/kf5-kross"
-  depends_on "kde-mac/kde/kf5-kxmlrpcclient"
-  depends_on "kde-mac/kde/kf5-tier4-frameworks"
+  depends_on "bomberfish/kde/kf5-kdelibs4support"
+  depends_on "bomberfish/kde/kf5-kdesignerplugin"
+  depends_on "bomberfish/kde/kf5-kdewebkit"
+  depends_on "bomberfish/kde/kf5-khtml"
+  depends_on "bomberfish/kde/kf5-kjs"
+  depends_on "bomberfish/kde/kf5-kjsembed"
+  depends_on "bomberfish/kde/kf5-kmediaplayer"
+  depends_on "bomberfish/kde/kf5-kross"
+  depends_on "bomberfish/kde/kf5-kxmlrpcclient"
+  depends_on "bomberfish/kde/kf5-tier4-frameworks"
 
   def install
     touch "empty"
@@ -31,7 +31,7 @@ class Kf5PortingaidsFrameworks < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-      "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+      "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

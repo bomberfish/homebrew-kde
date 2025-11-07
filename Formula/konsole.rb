@@ -8,16 +8,16 @@ class Konsole < Formula
   head "https://invent.kde.org/utilities/konsole.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-breeze-icons"
-  depends_on "kde-mac/kde/kf5-kinit"
-  depends_on "kde-mac/kde/kf5-knewstuff"
-  depends_on "kde-mac/kde/kf5-knotifyconfig"
-  depends_on "kde-mac/kde/kf5-kparts"
-  depends_on "kde-mac/kde/kf5-kpty"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-kinit"
+  depends_on "bomberfish/kde/kf5-knewstuff"
+  depends_on "bomberfish/kde/kf5-knotifyconfig"
+  depends_on "bomberfish/kde/kf5-kparts"
+  depends_on "bomberfish/kde/kf5-kpty"
 
   def install
     system "cmake", *kde_cmake_args
@@ -39,7 +39,7 @@ class Konsole < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

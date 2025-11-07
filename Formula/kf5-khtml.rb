@@ -8,15 +8,15 @@ class Kf5Khtml < Formula
   head "https://invent.kde.org/frameworks/khtml.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "gperf" => :build
   depends_on "ninja" => :build
 
   depends_on "giflib"
   depends_on "jpeg"
-  depends_on "kde-mac/kde/kf5-kjs"
-  depends_on "kde-mac/kde/kf5-kparts"
-  depends_on "kde-mac/kde/phonon"
+  depends_on "bomberfish/kde/kf5-kjs"
+  depends_on "bomberfish/kde/kf5-kparts"
+  depends_on "bomberfish/kde/phonon"
   depends_on "libpng"
   depends_on "openssl"
   depends_on "zlib"
@@ -31,7 +31,7 @@ class Kf5Khtml < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

@@ -8,20 +8,20 @@ class Kmymoney < Formula
   head "https://invent.kde.org/office/kmymoney.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
   depends_on "shared-mime-info" => :build
 
   depends_on "aqbanking"
   depends_on "boost"
   depends_on "gpgme"
-  depends_on "kde-mac/kde/kdiagram"
-  depends_on "kde-mac/kde/kf5-kactivities"
-  depends_on "kde-mac/kde/kf5-kcmutils"
-  depends_on "kde-mac/kde/kf5-kio"
-  depends_on "kde-mac/kde/kf5-kitemmodels"
-  depends_on "kde-mac/kde/kf5-kross"
-  depends_on "kde-mac/kde/libalkimia"
+  depends_on "bomberfish/kde/kdiagram"
+  depends_on "bomberfish/kde/kf5-kactivities"
+  depends_on "bomberfish/kde/kf5-kcmutils"
+  depends_on "bomberfish/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-kitemmodels"
+  depends_on "bomberfish/kde/kf5-kross"
+  depends_on "bomberfish/kde/libalkimia"
   depends_on "libical"
   depends_on "libofx"
   depends_on "sqlcipher"
@@ -50,7 +50,7 @@ class Kmymoney < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

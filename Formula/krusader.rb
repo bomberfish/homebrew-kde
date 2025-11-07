@@ -8,17 +8,17 @@ class Krusader < Formula
   head "https://invent.kde.org/utilities/krusader.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
 
   depends_on "gettext"
   depends_on "hicolor-icon-theme"
   depends_on "karchive"
-  depends_on "kde-mac/kde/kf5-kio"
-  depends_on "kde-mac/kde/kf5-kparts"
-  depends_on "kde-mac/kde/kf5-kwallet"
-  depends_on "kde-mac/kde/kf5-kxmlgui"
-  depends_on "kde-mac/kde/kio-extras"
+  depends_on "bomberfish/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-kparts"
+  depends_on "bomberfish/kde/kf5-kwallet"
+  depends_on "bomberfish/kde/kf5-kxmlgui"
+  depends_on "bomberfish/kde/kio-extras"
   depends_on "kdoctools"
 
   def install
@@ -41,7 +41,7 @@ class Krusader < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

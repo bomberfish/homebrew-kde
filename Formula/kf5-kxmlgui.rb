@@ -8,13 +8,13 @@ class Kf5Kxmlgui < Formula
   head "https://invent.kde.org/frameworks/kxmlgui.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "graphviz" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-attica"
-  depends_on "kde-mac/kde/kf5-kglobalaccel"
-  depends_on "kde-mac/kde/kf5-ktextwidgets"
+  depends_on "bomberfish/kde/kf5-attica"
+  depends_on "bomberfish/kde/kf5-kglobalaccel"
+  depends_on "bomberfish/kde/kf5-ktextwidgets"
   depends_on "qt@5"
 
   def install

@@ -3,28 +3,28 @@ Experimental [Homebrew](http://brew.sh) tap for KDE Frameworks and Applications 
 
 To add the this tap to your Homebrew installation:
 ```sh
-brew untap kde-mac/kde 2> /dev/null
-brew tap kde-mac/kde https://github.com/bomberfish/homebrew-kde.git --force-auto-update
-"$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+brew untap bomberfish/kde 2> /dev/null
+brew tap bomberfish/kde https://github.com/bomberfish/homebrew-kde.git --force-auto-update
+"$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
 ```
 
 ## Migration
-Currently this tap is in process of migration most of frameworks to `homebrew/core`, so it's best practice to run `"$(brew --repo kde-mac/kde)/tools/do-caveats.sh"` in case you are seeing any issue with linking. Sorry for inconvenience.
+Currently this tap is in process of migration most of frameworks to `homebrew/core`, so it's best practice to run `"$(brew --repo bomberfish/kde)/tools/do-caveats.sh"` in case you are seeing any issue with linking. Sorry for inconvenience.
 
 ## Installation 
 Now, the fun begins. You can either install individual frameworks via
 ```sh
-brew install kde-mac/kde/kf5-attica
+brew install bomberfish/kde/kf5-attica
 ```
 or you can install them all with a provided Brewfile provided in the repo's root directory:
 ```sh
-brew bundle --verbose --file "$(brew --repo kde-mac/kde)/Brewfile"
+brew bundle --verbose --file "$(brew --repo bomberfish/kde)/Brewfile"
 ```
 
 ## Casks 
 Some apps are offered in binary form via casks, so if you want to install binary package instead of formula please add `--cask` flag, e.g:
 ```sh
-brew install --cask kde-mac/kde/kdeconnect
+brew install --cask bomberfish/kde/kdeconnect
 ```
 
 ## Upgrading Casks
@@ -36,7 +36,7 @@ brew upgrade --greedy-latest
 ## Uninstallation
 To remove all KDE formulae, run:
 ```sh
-"$(brew --repo kde-mac/kde)/tools/uninstall.sh"
+"$(brew --repo bomberfish/kde)/tools/uninstall.sh"
 ```
 
 ## Installing HEAD

@@ -13,16 +13,16 @@ class Ktorrent < Formula
 
   depends_on "boost" => :build
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-breeze-icons"
-  depends_on "kde-mac/kde/kf5-kcmutils"
-  depends_on "kde-mac/kde/kf5-kio"
-  depends_on "kde-mac/kde/kf5-knotifyconfig"
-  depends_on "kde-mac/kde/kf5-kross"
-  depends_on "kde-mac/kde/libktorrent"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-kcmutils"
+  depends_on "bomberfish/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-knotifyconfig"
+  depends_on "bomberfish/kde/kf5-kross"
+  depends_on "bomberfish/kde/libktorrent"
 
   def install
     system "cmake", *kde_cmake_args
@@ -47,7 +47,7 @@ class Ktorrent < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

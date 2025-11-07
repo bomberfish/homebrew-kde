@@ -8,20 +8,20 @@ class KdeconnectKde < Formula
   head "https://invent.kde.org/network/kdeconnect-kde.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-kdeclarative" => :build
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-kdeclarative" => :build
   depends_on "ninja" => :build
   depends_on "gettext"
   depends_on "hicolor-icon-theme"
-  depends_on "kde-mac/kde/kf5-kcmutils"
-  depends_on "kde-mac/kde/kf5-kconfigwidgets"
-  depends_on "kde-mac/kde/kf5-kdbusaddons"
-  depends_on "kde-mac/kde/kf5-kiconthemes"
-  depends_on "kde-mac/kde/kf5-kio"
-  depends_on "kde-mac/kde/kf5-kirigami2"
-  depends_on "kde-mac/kde/kf5-knotifications"
-  depends_on "kde-mac/kde/kf5-kpeople"
-  depends_on "kde-mac/kde/kf5-kservice"
+  depends_on "bomberfish/kde/kf5-kcmutils"
+  depends_on "bomberfish/kde/kf5-kconfigwidgets"
+  depends_on "bomberfish/kde/kf5-kdbusaddons"
+  depends_on "bomberfish/kde/kf5-kiconthemes"
+  depends_on "bomberfish/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-kirigami2"
+  depends_on "bomberfish/kde/kf5-knotifications"
+  depends_on "bomberfish/kde/kf5-kpeople"
+  depends_on "bomberfish/kde/kf5-kservice"
   depends_on "kdoctools"
   depends_on "ki18n"
   depends_on "qca"

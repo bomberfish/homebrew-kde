@@ -8,11 +8,11 @@ class Kf5Kdewebkit < Formula
   head "https://invent.kde.org/frameworks/kdewebkit.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kparts"
-  depends_on "kde-mac/kde/qt-webkit"
+  depends_on "bomberfish/kde/kf5-kparts"
+  depends_on "bomberfish/kde/qt-webkit"
 
   def install
     system "cmake",

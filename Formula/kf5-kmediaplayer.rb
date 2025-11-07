@@ -8,10 +8,10 @@ class Kf5Kmediaplayer < Formula
   head "https://invent.kde.org/frameworks/kmediaplayer.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kparts"
+  depends_on "bomberfish/kde/kf5-kparts"
 
   def install
     system "cmake", *kde_cmake_args
@@ -23,7 +23,7 @@ class Kf5Kmediaplayer < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

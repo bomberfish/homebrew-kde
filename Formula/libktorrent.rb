@@ -15,10 +15,10 @@ class Libktorrent < Formula
   depends_on "boost" => :build
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kio"
+  depends_on "bomberfish/kde/kf5-kio"
   depends_on "libgcrypt"
   depends_on "qca"
   depends_on "qt@5"

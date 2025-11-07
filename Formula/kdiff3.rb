@@ -8,15 +8,15 @@ class Kdiff3 < Formula
   head "https://invent.kde.org/sdk/kdiff3.git", branch: "master"
 
   depends_on "cmake" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => :build
-  depends_on "kde-mac/kde/kf5-kcoreaddons" => :build
-  depends_on "kde-mac/kde/kf5-kcrash" => :build
-  depends_on "kde-mac/kde/kf5-kiconthemes" => :build
-  depends_on "kde-mac/kde/kf5-kparts" => :build
+  depends_on "bomberfish/kde/kf5-cmake-modules" => :build
+  depends_on "bomberfish/kde/kf5-kcoreaddons" => :build
+  depends_on "bomberfish/kde/kf5-kcrash" => :build
+  depends_on "bomberfish/kde/kf5-kiconthemes" => :build
+  depends_on "bomberfish/kde/kf5-kparts" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
   depends_on "qt@5"
 
   def install

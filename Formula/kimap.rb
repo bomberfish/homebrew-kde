@@ -8,12 +8,12 @@ class Kimap < Formula
   head "https://invent.kde.org/pim/kimap.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kio"
-  depends_on "kde-mac/kde/kmime"
+  depends_on "bomberfish/kde/kf5-kio"
+  depends_on "bomberfish/kde/kmime"
 
   def install
     system "cmake", *kde_cmake_args

@@ -11,14 +11,14 @@ class Ksysguard < Formula
   disable! date: "2023-10-25", because: "libksysguard depends on X11"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
   depends_on "hicolor-icon-theme"
-  depends_on "kde-mac/kde/kf5-kinit"
-  depends_on "kde-mac/kde/kf5-knewstuff"
-  depends_on "kde-mac/kde/libksysguard"
+  depends_on "bomberfish/kde/kf5-kinit"
+  depends_on "bomberfish/kde/kf5-knewstuff"
+  depends_on "bomberfish/kde/libksysguard"
 
   patch :DATA
 
@@ -42,7 +42,7 @@ class Ksysguard < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

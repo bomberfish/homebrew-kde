@@ -9,13 +9,13 @@ class Kf5Ktexteditor < Formula
 
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "graphviz" => :build
   depends_on "ninja" => :build
 
   depends_on "editorconfig"
-  depends_on "kde-mac/kde/kf5-kparts"
-  depends_on "kde-mac/kde/kf5-syntax-highlighting"
+  depends_on "bomberfish/kde/kf5-kparts"
+  depends_on "bomberfish/kde/kf5-syntax-highlighting"
   depends_on "libgit2"
 
   def install
@@ -28,7 +28,7 @@ class Kf5Ktexteditor < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

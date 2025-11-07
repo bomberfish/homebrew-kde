@@ -8,16 +8,16 @@ class Kf5Kdelibs4support < Formula
   head "https://invent.kde.org/frameworks/kdelibs4support.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-kdesignerplugin" => :build
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-kdesignerplugin" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kded"
-  depends_on "kde-mac/kde/kf5-kemoticons"
-  depends_on "kde-mac/kde/kf5-kitemmodels"
-  depends_on "kde-mac/kde/kf5-kparts"
-  depends_on "kde-mac/kde/kf5-kunitconversion"
+  depends_on "bomberfish/kde/kf5-kded"
+  depends_on "bomberfish/kde/kf5-kemoticons"
+  depends_on "bomberfish/kde/kf5-kitemmodels"
+  depends_on "bomberfish/kde/kf5-kparts"
+  depends_on "bomberfish/kde/kf5-kunitconversion"
   depends_on "openssl"
 
   uses_from_macos "perl"
@@ -53,7 +53,7 @@ class Kf5Kdelibs4support < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

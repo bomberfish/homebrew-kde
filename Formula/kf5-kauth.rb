@@ -9,12 +9,12 @@ class Kf5Kauth < Formula
 
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "graphviz" => :build
   depends_on "ninja" => :build
 
   depends_on "gpgme"
-  depends_on "kde-mac/kde/kf5-kcoreaddons"
+  depends_on "bomberfish/kde/kf5-kcoreaddons"
 
   def install
     system "cmake", *kde_cmake_args
@@ -26,7 +26,7 @@ class Kf5Kauth < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

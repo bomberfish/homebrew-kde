@@ -13,7 +13,7 @@ class Lokalize < Formula
   depends_on "gettext"
   depends_on "hicolor-icon-theme"
   depends_on "hunspell"
-  depends_on "kde-mac/kde/kf5-kross"
+  depends_on "bomberfish/kde/kf5-kross"
   depends_on "poxml"
   depends_on "qt@5"
   depends_on "subversion"
@@ -39,7 +39,7 @@ class Lokalize < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

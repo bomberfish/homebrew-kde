@@ -12,8 +12,8 @@ class Kf5Tier4Frameworks < Formula
     skip "Meta package"
   end
 
-  depends_on "kde-mac/kde/kf5-frameworkintegration"
-  depends_on "kde-mac/kde/kf5-tier3-frameworks"
+  depends_on "bomberfish/kde/kf5-frameworkintegration"
+  depends_on "bomberfish/kde/kf5-tier3-frameworks"
 
   def install
     touch "empty"
@@ -23,7 +23,7 @@ class Kf5Tier4Frameworks < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-      "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+      "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

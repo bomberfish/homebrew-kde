@@ -10,22 +10,22 @@ class Okular < Formula
   depends_on "chmlib" => :build
   depends_on "cmake" => [:build, :test]
   depends_on "ebook-tools" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-khtml" => :build
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-khtml" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
   depends_on "discount"
   depends_on "djvulibre"
   depends_on "freetype"
-  depends_on "kde-mac/kde/kf5-breeze-icons"
-  depends_on "kde-mac/kde/kf5-kactivities"
-  depends_on "kde-mac/kde/kf5-kirigami2"
-  depends_on "kde-mac/kde/kf5-kjs"
-  depends_on "kde-mac/kde/kf5-kparts"
-  depends_on "kde-mac/kde/kf5-kpty"
-  depends_on "kde-mac/kde/libkexiv2"
-  depends_on "kde-mac/kde/phonon"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-kactivities"
+  depends_on "bomberfish/kde/kf5-kirigami2"
+  depends_on "bomberfish/kde/kf5-kjs"
+  depends_on "bomberfish/kde/kf5-kparts"
+  depends_on "bomberfish/kde/kf5-kpty"
+  depends_on "bomberfish/kde/libkexiv2"
+  depends_on "bomberfish/kde/phonon"
   depends_on "libspectre"
   depends_on "poppler-qt5"
   depends_on "qca"
@@ -86,7 +86,7 @@ class Okular < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

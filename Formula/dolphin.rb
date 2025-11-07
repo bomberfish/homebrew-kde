@@ -8,19 +8,19 @@ class Dolphin < Formula
   head "https://invent.kde.org/system/dolphin.git", branch: "master"
 
   depends_on "cmake" => [:build, :test]
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-breeze-icons"
-  depends_on "kde-mac/kde/kf5-kactivities"
-  depends_on "kde-mac/kde/kf5-kcmutils"
-  depends_on "kde-mac/kde/kf5-kfilemetadata"
-  depends_on "kde-mac/kde/kf5-kinit"
-  depends_on "kde-mac/kde/kf5-knewstuff"
-  depends_on "kde-mac/kde/kf5-kparts"
-  depends_on "kde-mac/kde/kio-extras"
-  depends_on "kde-mac/kde/konsole"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-kactivities"
+  depends_on "bomberfish/kde/kf5-kcmutils"
+  depends_on "bomberfish/kde/kf5-kfilemetadata"
+  depends_on "bomberfish/kde/kf5-kinit"
+  depends_on "bomberfish/kde/kf5-knewstuff"
+  depends_on "bomberfish/kde/kf5-kparts"
+  depends_on "bomberfish/kde/kio-extras"
+  depends_on "bomberfish/kde/konsole"
   depends_on "ruby"
 
   def install
@@ -43,7 +43,7 @@ class Dolphin < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

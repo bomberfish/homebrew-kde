@@ -10,16 +10,16 @@ class Kf5Kservice < Formula
   depends_on "bison" => :build
   depends_on "cmake" => [:build, :test]
   depends_on "doxygen" => :build
-  depends_on "kde-mac/kde/kf5-cmake-modules" => [:build, :test]
+  depends_on "bomberfish/kde/kf5-cmake-modules" => [:build, :test]
   depends_on "flex" => :build
   depends_on "gettext" => :build
   depends_on "graphviz" => :build
   depends_on "kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "kde-mac/kde/kf5-kconfig"
-  depends_on "kde-mac/kde/kf5-kcrash"
-  depends_on "kde-mac/kde/kf5-kdbusaddons"
+  depends_on "bomberfish/kde/kf5-kconfig"
+  depends_on "bomberfish/kde/kf5-kcrash"
+  depends_on "bomberfish/kde/kf5-kdbusaddons"
   depends_on "ki18n"
 
   def install
@@ -32,7 +32,7 @@ class Kf5Kservice < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-        "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+        "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 

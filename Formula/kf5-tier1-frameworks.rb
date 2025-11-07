@@ -12,27 +12,27 @@ class Kf5Tier1Frameworks < Formula
     skip "Meta package"
   end
 
-  depends_on "kde-mac/kde/kf5-cmake-modules"
+  depends_on "bomberfish/kde/kf5-cmake-modules"
   depends_on "karchive"
-  depends_on "kde-mac/kde/kf5-attica"
-  depends_on "kde-mac/kde/kf5-breeze-icons"
-  depends_on "kde-mac/kde/kf5-kcodecs"
-  depends_on "kde-mac/kde/kf5-kconfig"
-  depends_on "kde-mac/kde/kf5-kcoreaddons"
-  depends_on "kde-mac/kde/kf5-kdbusaddons"
-  depends_on "kde-mac/kde/kf5-kdnssd"
-  depends_on "kde-mac/kde/kf5-kguiaddons"
-  depends_on "kde-mac/kde/kf5-kidletime"
-  depends_on "kde-mac/kde/kf5-kirigami2"
-  depends_on "kde-mac/kde/kf5-kitemmodels"
-  depends_on "kde-mac/kde/kf5-kitemviews"
-  depends_on "kde-mac/kde/kf5-kplotting"
-  depends_on "kde-mac/kde/kf5-kwidgetsaddons"
-  depends_on "kde-mac/kde/kf5-kwindowsystem"
-  depends_on "kde-mac/kde/kf5-qqc2-desktop-style"
-  depends_on "kde-mac/kde/kf5-solid"
-  depends_on "kde-mac/kde/kf5-sonnet"
-  depends_on "kde-mac/kde/kf5-syntax-highlighting"
+  depends_on "bomberfish/kde/kf5-attica"
+  depends_on "bomberfish/kde/kf5-breeze-icons"
+  depends_on "bomberfish/kde/kf5-kcodecs"
+  depends_on "bomberfish/kde/kf5-kconfig"
+  depends_on "bomberfish/kde/kf5-kcoreaddons"
+  depends_on "bomberfish/kde/kf5-kdbusaddons"
+  depends_on "bomberfish/kde/kf5-kdnssd"
+  depends_on "bomberfish/kde/kf5-kguiaddons"
+  depends_on "bomberfish/kde/kf5-kidletime"
+  depends_on "bomberfish/kde/kf5-kirigami2"
+  depends_on "bomberfish/kde/kf5-kitemmodels"
+  depends_on "bomberfish/kde/kf5-kitemviews"
+  depends_on "bomberfish/kde/kf5-kplotting"
+  depends_on "bomberfish/kde/kf5-kwidgetsaddons"
+  depends_on "bomberfish/kde/kf5-kwindowsystem"
+  depends_on "bomberfish/kde/kf5-qqc2-desktop-style"
+  depends_on "bomberfish/kde/kf5-solid"
+  depends_on "bomberfish/kde/kf5-sonnet"
+  depends_on "bomberfish/kde/kf5-syntax-highlighting"
   depends_on "ki18n"
   depends_on "threadweaver"
 
@@ -44,7 +44,7 @@ class Kf5Tier1Frameworks < Formula
   def caveats
     <<~EOS
       You need to take some manual steps in order to make this formula work:
-      "$(brew --repo kde-mac/kde)/tools/do-caveats.sh"
+      "$(brew --repo bomberfish/kde)/tools/do-caveats.sh"
     EOS
   end
 
