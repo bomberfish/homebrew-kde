@@ -17,15 +17,15 @@ class Kf5Ki18n < Formula
     regex(%r{href=.*?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
-  bottle do
-    sha256 arm64_sonoma:   "2836654205f381bcc0a2417d9e3c7bd6fd64d2d096e0df2ebc72d102772e8207"
-    sha256 arm64_ventura:  "52b3a4e27d08c014fe3a2fed7c3c9c81129b140b9f060400061aaf60c5a8063b"
-    sha256 arm64_monterey: "44298bc7b18b0b72e832307391878138e96b22fb8021d3583e6de81df251be2f"
-    sha256 sonoma:         "7add0280b8b09d7e508efe5447843c74e6ef8c9e8c0cee0d36ec18af74fe88cd"
-    sha256 ventura:        "3117ec8e7621381f1168bb0e6f9e2623cd15d4211fa5fa03d7dc1f4453bada57"
-    sha256 monterey:       "e3ef49e6e3d279caa233464193fd58c83dabef6d969683913fecc4d0016ac014"
-    sha256 x86_64_linux:   "b3daeaa12b07becbf8257a22887e5304770b73c655f65dc821607b2f45c9e91f"
-  end
+  # bottle do
+  #   sha256 arm64_sonoma:   "2836654205f381bcc0a2417d9e3c7bd6fd64d2d096e0df2ebc72d102772e8207"
+  #   sha256 arm64_ventura:  "52b3a4e27d08c014fe3a2fed7c3c9c81129b140b9f060400061aaf60c5a8063b"
+  #   sha256 arm64_monterey: "44298bc7b18b0b72e832307391878138e96b22fb8021d3583e6de81df251be2f"
+  #   sha256 sonoma:         "7add0280b8b09d7e508efe5447843c74e6ef8c9e8c0cee0d36ec18af74fe88cd"
+  #   sha256 ventura:        "3117ec8e7621381f1168bb0e6f9e2623cd15d4211fa5fa03d7dc1f4453bada57"
+  #   sha256 monterey:       "e3ef49e6e3d279caa233464193fd58c83dabef6d969683913fecc4d0016ac014"
+  #   sha256 x86_64_linux:   "b3daeaa12b07becbf8257a22887e5304770b73c655f65dc821607b2f45c9e91f"
+  # end
 
   head do
     url "https://invent.kde.org/frameworks/ki18n.git", branch: "master"

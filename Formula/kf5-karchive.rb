@@ -19,15 +19,15 @@ class Kf5Karchive < Formula
     regex(%r{href=.*?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
-  bottle do
-    sha256 cellar: :any,                 arm64_sonoma:   "e58e82837b69a353805dfb32784980f22c4e97cb249fb4f732beca9828801e71"
-    sha256 cellar: :any,                 arm64_ventura:  "a7b12ad651e2c265dfa1592378c536cdd04b170e62f3d0f42c226155cacc88e9"
-    sha256 cellar: :any,                 arm64_monterey: "6cd3bc877dcfd48b80d92b17a283e8d928a87d2289c9cdcd532574b775f87840"
-    sha256 cellar: :any,                 sonoma:         "f41f4d3b028ba8c0ff8d51fe2ae2fa4129b3e57f906c1bd4a9833cf14dad46fc"
-    sha256 cellar: :any,                 ventura:        "dd5a68e643539052ca4272b4d83aabbf004e0e89477b742e3d587904d98f1b9a"
-    sha256 cellar: :any,                 monterey:       "dc215b768fb40047decab0d2c2b47789a95e1ee8ee495203af325be21aa9bb1d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "90d4a4257fa7c79f925a0a89a07fec8fce18212cbe446edfec937101ea9df126"
-  end
+  # bottle do
+  #   sha256 cellar: :any,                 arm64_sonoma:   "e58e82837b69a353805dfb32784980f22c4e97cb249fb4f732beca9828801e71"
+  #   sha256 cellar: :any,                 arm64_ventura:  "a7b12ad651e2c265dfa1592378c536cdd04b170e62f3d0f42c226155cacc88e9"
+  #   sha256 cellar: :any,                 arm64_monterey: "6cd3bc877dcfd48b80d92b17a283e8d928a87d2289c9cdcd532574b775f87840"
+  #   sha256 cellar: :any,                 sonoma:         "f41f4d3b028ba8c0ff8d51fe2ae2fa4129b3e57f906c1bd4a9833cf14dad46fc"
+  #   sha256 cellar: :any,                 ventura:        "dd5a68e643539052ca4272b4d83aabbf004e0e89477b742e3d587904d98f1b9a"
+  #   sha256 cellar: :any,                 monterey:       "dc215b768fb40047decab0d2c2b47789a95e1ee8ee495203af325be21aa9bb1d"
+  #   sha256 cellar: :any_skip_relocation, x86_64_linux:   "90d4a4257fa7c79f925a0a89a07fec8fce18212cbe446edfec937101ea9df126"
+  # end
 
   head do
     url "https://invent.kde.org/frameworks/karchive.git", branch: "master"
