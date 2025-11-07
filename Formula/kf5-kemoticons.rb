@@ -13,7 +13,7 @@ class Kf5Kemoticons < Formula
   depends_on "graphviz" => :build
   depends_on "ninja" => :build
 
-  depends_on "bomberfish/kde/karchive"
+  depends_on "bomberfish/kde/kf5-karchive"
   depends_on "bomberfish/kde/kf5-kservice"
 
   def install

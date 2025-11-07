@@ -41,7 +41,7 @@ class Kf5Kdoctools < Formula
   depends_on "bomberfish/kde/kf5-ki18n" => :build
 
   depends_on "docbook-xsl"
-  depends_on "bomberfish/kde/karchive"
+  depends_on "bomberfish/kde/kf5-karchive"
 
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"

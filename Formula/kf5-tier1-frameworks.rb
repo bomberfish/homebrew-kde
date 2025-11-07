@@ -13,7 +13,7 @@ class Kf5Tier1Frameworks < Formula
   end
 
   depends_on "bomberfish/kde/kf5-extra-cmake-modules"
-  depends_on "bomberfish/kde/karchive"
+  depends_on "bomberfish/kde/kf5-karchive"
   depends_on "bomberfish/kde/kf5-attica"
   depends_on "bomberfish/kde/kf5-breeze-icons"
   depends_on "bomberfish/kde/kf5-kcodecs"

@@ -15,7 +15,7 @@ class Kf5Kpackage < Formula
   depends_on "bomberfish/kde/kf5-kdoctools" => :build
   depends_on "ninja" => :build
 
-  depends_on "bomberfish/kde/karchive"
+  depends_on "bomberfish/kde/kf5-karchive"
   depends_on "bomberfish/kde/kf5-kcoreaddons"
   depends_on "bomberfish/kde/kf5-ki18n"
 
