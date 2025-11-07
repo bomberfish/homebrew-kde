@@ -13,7 +13,7 @@ class Krusader < Formula
 
   depends_on "gettext"
   depends_on "hicolor-icon-theme"
-  depends_on "karchive"
+  depends_on "bomberfish/kde/karchive"
   depends_on "bomberfish/kde/kf5-kio"
   depends_on "bomberfish/kde/kf5-kparts"
   depends_on "bomberfish/kde/kf5-kwallet"

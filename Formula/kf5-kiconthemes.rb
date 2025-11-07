@@ -14,7 +14,7 @@ class Kf5Kiconthemes < Formula
   depends_on "graphviz" => :build
   depends_on "ninja" => :build
 
-  depends_on "karchive"
+  depends_on "bomberfish/kde/karchive"
   depends_on "bomberfish/kde/kf5-kconfigwidgets"
   depends_on "bomberfish/kde/kf5-kitemviews"
 

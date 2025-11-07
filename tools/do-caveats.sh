@@ -10,9 +10,6 @@ fi
 brew services restart dbus
 
 MIGRATED=(
-	karchive
-	kdoctools
-	ki18n
 	threadweaver
 )
 

@@ -12,7 +12,7 @@ class Kf5Kimageformats < Formula
   depends_on "ninja" => :build
 
   depends_on "jasper"
-  depends_on "karchive"
+  depends_on "bomberfish/kde/karchive"
   depends_on "openexr"
   depends_on "qt@5"
 

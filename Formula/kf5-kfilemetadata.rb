@@ -16,7 +16,7 @@ class Kf5Kfilemetadata < Formula
   depends_on "ebook-tools"
   depends_on "exiv2"
   depends_on "ffmpeg"
-  depends_on "karchive"
+  depends_on "bomberfish/kde/karchive"
   depends_on "bomberfish/kde/kf5-kconfig"
   depends_on "bomberfish/kde/kf5-kcoreaddons"
   depends_on "bomberfish/kde/kf5-ki18n"
