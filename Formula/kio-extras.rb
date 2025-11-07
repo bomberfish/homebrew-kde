@@ -24,7 +24,7 @@ class KioExtras < Formula
 
   # Requires x86_64 macOS
   depends_on "openslp" if OS.mac? && Hardware::CPU.intel?
-  depends_on "bomberfish/kde/taglib-1""
+  depends_on "bomberfish/kde/taglib-1"
 
   patch do
     # Fix https://bugs.kde.org/show_bug.cgi?id=402335

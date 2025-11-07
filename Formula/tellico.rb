@@ -24,7 +24,7 @@ class Tellico < Formula
   depends_on "libcdio"
   depends_on "poppler-qt5"
   depends_on "qt@5"
-  depends_on "bomberfish/kde/taglib-1""
+  depends_on "bomberfish/kde/taglib-1"
   depends_on "yaz"
 
   uses_from_macos "perl"
