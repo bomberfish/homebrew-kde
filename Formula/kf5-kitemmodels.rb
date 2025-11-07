@@ -3,7 +3,7 @@ require_relative "../lib/cmake"
 class Kf5Kitemmodels < Formula
   desc "Models for Qt Model/View system"
   homepage "https://api.kde.org/frameworks/kitemmodels/html/index.html"
-  url "https://download.kde.org/stable/frameworks/5.111/kitemmodels-5.111.0.tar.xz"
+  url "https://download.kde.org/stable/frameworks/5.116/kitemmodels-5.116.0.tar.xz"
   sha256 "55361b811dfc7d48dcff3ce6d5f749ba53710dcccd460d32f20de4403d539cc4"
   head "https://invent.kde.org/frameworks/kitemmodels.git", branch: "master"
 
